@@ -1,0 +1,122 @@
+Front End devleopment:
+-----------------------------
+HTML---
+CSS--
+JavaScript--
+jQuery--
+AJAX-
+	XML
+	JSON
+	
+HTML-- Hyper text markup language:
+
+<html>
+	
+</html>
+
+<tag/>--signleton tag
+<!doctype html>
+<html>
+	<head>
+		
+	</head>
+	<body></body>
+</html>	
+
+orderd list   --<ol>
+unordered list---- <ul>
+
+table-- thead, tbody
+		<tr>--table row
+			td--table data
+		 th--table heading
+
+
+file:///F:/Spring%20People/Dell%20EMC/demos/links.html?uname=anil%40g.com&pwd=gfghfgh		 
+
+file:///F:/Spring%20People/Dell%20EMC/demos/links.html
+
+
+^ $
+[a-z]---
+[A-Za-z0-9]
+[A-Za-z0-9/+]
+
+px
+percentage
+em
+
+style="
+	property_name:value;
+	border-style: dashed, dotted, solid, double....
+	border-width: 
+	border-color:
+	
+	border: 15px  45px dashed color;
+	
+	
+	top right bottom left
+	border-top: 
+"
+audio
+video
+layout semantics---header, footer, aside, nav, article
+
+canvas
+svg--scalar vector graphics
+webstorage
+localstorage
+WebSockets
+
+
+CSS:
+----
+ style---inline css, internal css, external css
+ 
+ selectors--- tag selectors
+						p{
+							
+						}
+						id Selector
+						#p1{
+						}
+						class selector
+						.classname{
+						}
+						p,div,span{}
+		
+			Properties:
+			------------------
+				color--font color
+				background-color
+				
+				color: name
+						rgb(255,0,0)---red
+						rgb(0,255,0)---blue
+						opacity-- 0 to1
+						rgba(0,0,255,0.4)			
+						hash--- #000000
+									#fffffff
+									
+									#000
+									#fff
+						hsl--hue stauration lightness
+						
+		Box Model---
+				
+				
+				
+						
+						
+					
+ 
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+HTML:
+--------
+CSS:
+-----
+	iniline: <tag style="">
+	internal: <style> css </style>
+	external : <link rel="stylesheet" href="css/external.css">
+	
+	selector:  --- tagname selector
+						id selector(#)
+						class selector(.)
+						psuedo selector :first-child, :last-child, :nth-child(even), 
+												 :hover, :visited, :active
+					
+	Properties: 
+	 selector{
+		prop:prop value;
+	 }
+	
+	 font:  font-size, font-weight, font-family
+	 text: text-align
+	 color: background-color, color
+	 
+	 box model:   
+				margin
+				border
+				padding
+				
+		width
+		height
+		
+		calculate the width:   width+border+padding
+		cal height:                  height+border+padding
+		
+		
+		box-sizing: border-box
+		
+JavaScript:  ECMA Script5, ECMA Script 6,----> TypeScript
+------------------
+	<script>
+		var---global variable
+		let---local variable
+	</script>
+
+		DOM--Document Object Model
+		
+		document.getElementById('para1');
+		
+		document.form.text1.value
+		
+	
+					

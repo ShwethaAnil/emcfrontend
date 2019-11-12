@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>Layout</title>
+	</head>
+	<body>
+		<div style="border:3px dashed red;
+							height:10%;">Page <span style="color:blue"> Heading</span>
+							</div>
+		<div style="border:3px dotted yellow;
+							height:60%;">
+				<form action="links.html" method="post" name="fname"
+		autocomplete="off">
+			<label>UserName</label>
+			<br/>
+			<input type="text" name="uname" id="uname" pattern="^[a-zA-Z]*$" \
+			title="only letters" placeholder="only letters" autofocus
+				 required/>
+			<br/>
+			<label> Password</label><br/>
+			<input type="password" name="pwd" id="pwd" 
+			pattern="^[a-zA-Z0-9]{8}$"
+				title="only 8 charecters or numbers" required/>
+			<br/>
+			<label>Re enter Password</label><br/>
+			<input type="password" name="pwd" id="pwd" 
+			pattern="^[a-zA-Z0-9]{8}$"
+				title="only 8 charecters or numbers" required/>
+			<br/>
+			<label>Enter Email</label><br/>
+			<input type="email" name="email" required/>
+			<br/>
+			<label> Gender</label><br/>
+			<input type="radio" name="gen" value="m">Male
+			<input type="radio" name="gen" value="f">Female
+			<input type="radio" name="gen" value="o">Other
+			<br/>
+			<label> Languages Known</label><br/>
+			<input type="checkbox" name="lan" value="KA">Kannada
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="checkbox" name="lan" value="EN">English
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="checkbox" name="lan" value="HN">Hindi
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="checkbox" name="lan" value="TE">Telugu
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="checkbox" name="lan" value="TA">Tamil
+			<br/>
+			<label>Country</label><br/>
+			<select name="ctry">
+				<option>-------Select--------</option>
+				<option value="IN">India</option>
+				<option value="US">USA</option>
+				<option value="EN">England</option>
+			</select><br/>
+			<label>State</label><br/>
+			<select name="state">
+				<option>-------Select--------</option>
+				<option value="KA">Karnataka</option>
+				<option value="AP">AndraPradesh</option>
+				<option value="BR">Brazil</option>
+				<option value="NW">NewYork</option>
+			</select><br/>
+			
+			<input type="submit" value="Login"/>
+			<input type="reset" value="Cancel"/>
+		</form>
+							
+							
+		</div>
+		<div style="border:3px solid blue;
+							height:10%;">Copy @ Shwetha</div>
+	</body>
+</html>

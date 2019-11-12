@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<script language="javascript">
+		function getMethod(){
+			var msg=confirm('are you ok?');
+			var name=prompt('enter your name',);
+			if( msg === true){
+			document.getElementById('para').innerHTML='welcome  '+name;
+			}else {
+			document.getElementById('para').innerHTML='you have cancelled the request';
+			}
+		}
+			/*alert('Welcome');
+			confirm('are you ok?');
+			prompt('enter phone number',);*/
+		</script>
+	</head>
+	<body>
+		<p>Some text</p>
+		<button onclick="getMethod()">Click me </button>
+		
+		<br/>
+		<p id="para"></p>
+		
+	</body>
+</html>

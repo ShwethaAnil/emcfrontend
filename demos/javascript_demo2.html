@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<script language="javascript">
+		function getMethod(){
+		var name=document.getElementById('t1');
+			var pass= document.getElementById('pwd');
+			var pass1=document.getElementById('rpwd');
+			
+			var language= document.getElementsByClassName('lan');
+			/*alert(language[0].checked);
+			alert(language[1].checked);
+			alert(language[2].checked);
+			alert(language[3].checked);*/
+			var counter = 0;
+			for(var i=0;i<3;i++){
+			if(language[i].checked ){
+				counter++;
+				if(counter > 0)
+					break;
+				return true;
+			}else{
+			//alert('not checked');
+			return false;
+			}
+			}
+			
+			if(name.value === ' ' || name.value.trim() === ' '){
+				name.style.border = ' solid 4px red';
+				return false;
+				}else{
+			if(pass.value === pass1.value){
+			document.getElementById('para').innerHTML = 'welcome' +name;
+			return true;
+			}else{
+				pass.style.border = ' solid 4px red';
+				pass1.style.border = 'solid 4px red';
+				return false;
+			}
+			}
+		}
+		function changeStyle(){
+			document.getElementById('para').style.display = 'none';
+		}
+		function changeStyle1(){
+			document.getElementById('para').style.display = 'block';
+			document.getElementById('para').style.color = 'red';
+		}
+		</script>
+	</head>
+	<body>
+		<p>Sample Form</p>
+		<form onsubmit="return getMethod();">
+		<input type='text' id="t1"/> <br/>
+		<input type='password' id="pwd"><br/>
+		<input type="password" id="rpwd"><br/><br/><br/>
+		<input type='checkbox' class="lan" name="lan" value="KA">Kannada
+		<input type='checkbox'   class="lan" name="lan" value="EN">English
+		<input type='checkbox' class="lan" name="lan" value="HI">Hindi
+		<input type='checkbox' class="lan" name="lan" value="TE">Telugu
+		<input type="submit" value="Login">
+		<br/>
+		</form>
+		<p id="para">Some Paragraph</p>	
+		<button onclick="changeStyle()">Hide</button>
+		<button onclick="changeStyle1()">show</button>
+	</body>
+</html>

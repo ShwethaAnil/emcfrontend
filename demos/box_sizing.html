@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<style>
+			*{
+				box-sizing: border-box; 
+			}
+	
+			#div1{
+				border: 5px solid red;
+				width: 150px;
+				height: 100px;
+				margin: 10px;
+				background-image:radial-gradient(circle,red 15%,green 20%,blue, yellow);
+			}
+			#div2{
+				border: 5px solid red;
+				width: 150px;
+				height: 100px;
+				padding:15px;
+				margin: 10px;
+				background-image: linear-gradient(to right,red 10%,green 20%
+				,yellow,blue);
+			}
+			#div3{
+				border: 5px solid red;
+				width: 250px;
+				height: 100px;
+				padding:25px;
+				margin: 10px;
+				background-image: url('C://Users/shwet/Downloads/download.png');
+			}
+			
+			#div5{
+				border: 5px solid red;
+				width: 250px;
+				height: 100px;
+				padding:25px;
+				margin: 10px;
+				-webkit-transform: rotateZ(60deg);
+				transform:rotateZ(60deg);
+				background-image: url('C://Users/shwet/Downloads/download.png');
+			}
+			
+			#div4{
+				margon: 30px;
+				border:10px solid blue;
+				width:250px;
+				height: 80px;
+				background-color: blue;
+				text-align:center;
+				color: white;
+				//border-radius: 55px;
+				border-bottom-right-radius: 55px;//all latest browsers
+				-moz-border-bottom-right-radius:55px;//firefox old
+				-webkit-border-bottom-right-radius: 55px;//safari
+			}	
+			#div4 a{
+			text-decoration:none;
+			font-size: 3em;
+			color: white;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="div1">Some Content
+		</div>
+		<div id="div2">Some  more Content
+		</div>
+		<div id="div3">Some  more Content
+		</div>
+		
+		<div id="div5">Some  more Content
+		</div>
+		
+		<div id="div4">
+			<a href="first.html">Click</a>
+		</div>
+		
+	</body>
+</html>
