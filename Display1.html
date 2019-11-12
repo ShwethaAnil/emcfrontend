@@ -1,0 +1,92 @@
+<html>
+<head>
+
+<script>
+
+function validate1Form() {
+var t1=document.myform.barbie.value;
+var t2=document.myform.calci.value;
+var t3=document.myform.mob.value;
+var t4=document.myform.dvd.value;
+var myown;
+
+if(t1=="" && t2=="" && t3=="" && t4=="")
+{
+alert("Value should be filled");
+
+}
+else
+{
+myown=window.open('','','width=300 height=300');
+myown.document.writeln("<html><body><h1>");
+myown.document.writeln("<center>Invoice<center>");
+myown.document.writeln("</h1>");
+myown.document.writeln("<center><table  border='1'width='600'><tr><tr><th>PRODUCT</th><th>QUANTITY</th><th>PRICE</th><th>TOTAL</th></tr>");
+
+ if(!t1==""){
+myown.document.writeln("<tr><td>Barbie Doll</td><td>"+t1+"</td><td>20</td><td>");
+myown.document.writeln((t1*20)+"</td></tr>");
+myown.document.writeln("</body></html>");
+}
+ if(!t2=="")
+{
+myown.document.writeln("<td>Calculator</td><td>"+t2+"</td><td>30</td><td>");
+myown.document.writeln((t2*30)+"</td></tr>");
+myown.document.writeln("</body></html>");
+}
+ if(!t3=="")
+{
+myown.document.writeln("<tr><td>Mobile Phone</td><td>"+t3+"</td><td>40</td><td>");
+myown.document.writeln((t3*40)+"</td></tr>");
+myown.document.writeln("</body></html>");
+}
+ if(!t4=="")
+{
+myown.document.writeln("<tr><td>LG DVD</td><td>"+t4+"</td><td>50</td><td>");
+myown.document.writeln((t4*50)+"</td></tr></table></center>");
+myown.document.writeln("</body></html>");
+}
+}
+}
+
+</script>
+</head>
+<body style="background-color:aqua;">
+<form name="myform" >
+<table border="1">
+<caption><b>PRODUCTS</b></caption><br>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Price</th>
+<th>Qty</th>
+</tr>
+<tr>
+<td>Barbie Doll</td>
+<td>Beautiful</td>
+<td>20</td>
+<td><input type="text" name="barbie" ></td>
+</tr>
+<tr>
+<td>Calculator</td>
+<td>Calculator with latest features</td>
+<td>30</td>
+<td><input type="text" name="calci"></td>
+</tr>
+<tr>
+<td>Mobile Phone</td>
+<td>Camera,Java,Games,GPRS</td>
+<td>40</td>
+<td><input type="text" name="mob"></td>
+</tr>
+<tr>
+<td>LG DVD</td>
+<td>5 disc changer</td>
+<td>50</td>
+<td><input type="text" name="dvd"></td>
+</tr>
+</table><input type="button" value="Order" onClick="validate1Form()" >
+</input>
+</form>
+</body>
+</html>
