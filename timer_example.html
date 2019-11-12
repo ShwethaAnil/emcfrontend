@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<script>
+			var id=0;
+			var seconds=0;
+			function printmsg(){
+				document.getElementById('p1').innerHTML= seconds +' time';
+				seconds=seconds+2;
+			}
+			
+			function start(){
+				id= window.setInterval(printmsg,2000);
+			}
+			function  stopmsg(){
+			window.clearInterval(id);
+			}
+		</script>
+	</head>
+	<body>
+		<button id="btn1" onclick="start()">Start</button>
+			<br/>
+			<p id="p1">Some text</p><br/>
+			<button id="btn2" onclick="stopmsg()">Stop</button>
+	</body>
+</html>
