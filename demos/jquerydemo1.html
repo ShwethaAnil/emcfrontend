@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<style>
+			#div1{
+				border: 5px solid blue;
+				width:50px;
+				height:25px;
+				padding:45px;
+			}
+		</style>
+		<script>
+			function fn1(){
+				$("#div1").hide(1000);
+			}
+			
+			function fn2(){
+				$("#div1").show();
+			}
+			function fn3(){
+				$("#div1").toggle();
+			}
+		</script>
+	</head>
+	<div id="div1">
+		Some Content
+	</div>
+	<button onclick="fn1()">Hide</button>
+	<button onclick="fn2()">Show</button>
+	<button onclick="fn3()">Toggle</button>
+</html>
