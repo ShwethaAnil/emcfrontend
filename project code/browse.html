@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<title>IT Tools Developer Directory</title>
+<!-- for data from rest api
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+
+function myTable(eid,ename,skills){
+	var table= document.getElementById("table");
+	var row= table.insertRow(1);
+	var col1= row.insertCell(0);
+	var col2= row.insertCell(1);
+    var col3= row.insertCell(2);
+	col1.innerHTML = eid;
+	col2.innerHTML = ename;
+	col3.innerHTML = skills;
+}
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $.get("http://localhost:8089/SpringWithER/employees", function(data, status){
+		var obj = JSON.stringify(data);
+		document.getElementById('div1').innerHTML= obj;
+		
+		for(i in data){
+			myTable(JSON.stringify(data[i].eid),JSON.stringify(data[i].ename),JSON.stringify(data[i].skills));
+		}	
+    });
+  });
+});
+</script>-->
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1><span class="IT Tools-text">IT Tools</span> Developer Directory</h1>
+			<h2>Find A Developer <span class="white-text">NOW</span></h2>
+		</header>
+		
+		<nav id="menu">
+			<ul>
+				<li class="menuitem"><a href="index.html">Home</a></li>
+				<li class="menuitem"><a href="about.html">About Us</a></li>
+				<li class="menuitem"><a href="browse.html">Browse Developers</a></li>
+				<li class="menuitem"><a href="register.html">Register As Developer</a></li>
+				<li class="menuitem"><a href="contact.html">Contact Us</a></li>
+			</ul>
+	    </nav>
+		 
+		 <aside>
+			<nav id="leftmenu">
+			<h3>Links</h3>
+				<ul>
+					<li><a href="browse.html">JAVA</a></li>
+					<li><a href="browse.html">DB</a></li>
+					<li><a href="browse.html">Ajax</a></li>
+					<li><a href="browse.html">jQuery</a></li>
+					<li><a href="browse.html">Web design</a></li>
+					<li><a href="browse.html">Web Programming</a></li>
+					<li><a href="browse.html">Content Creation</a></li>
+					<li><a href="browse.html">Internet Marketing</a></li>
+					<li><a href="browse.html">XHTML Templates</a></li>
+				</ul>
+			</nav>
+		</aside>
+    
+	<section>
+		<h2>Browse Developers</h2>
+		<h3 class="IT Tools-background">JAVA Developers</h3>
+<table class="dev-table">
+		<thead>
+			<tr>
+			<th>Name</th>
+			<th>City</th>
+			<th>Skills</th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td><a href="profile.html">SHWETHA</a></td>
+			<td>Bangalore</td>
+			<td>html5, css, java</td>
+		</tr>
+		<tr>
+			<td><a href="profile.html">NATESH</a></td>
+			<td>Bangalore</td>
+			<td>html5, css</td>
+		</tr>
+		<tr>
+			<td><a href="profile.html">AAYUSH</a></td>
+			<td>Bangalore</td>
+			<td>html5, ror, php, asp</td>
+		</tr>
+		<tr>
+			<td><a href="profile.html">VRITHIKA</a></td>
+			<td>Bangalore</td>
+			<td>Photoshop, html, css</td>
+		</tr>
+		<tr>
+			<td><a href="profile.html">SWATHI</a></td>
+			<td>Mangalore</td>
+			<td>html5, Photoshop, css</td>
+		</tr>
+		</tbody>
+	</table>
+	
+	<h3 class="IT Tools-background">DB Developers</h3>
+	<table class="dev-table">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>City</th>
+				<th>Skills</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><a href="profile.html">VAMSHI</a></td>
+				<td>Mangalore</td>
+				<td>Oracle</td>
+			</tr>
+			<tr>
+				<td><a href="profile.html">VISMITHA</a></td>
+				<td>Bangalore</td>
+				<td>MySQL</td>
+			</tr>
+			<tr>
+				<td><a href="profile.html">ASHA</a></td>
+				<td>Bangalore</td>
+				<td>NoSQL</td>
+			</tr>
+			<tr>
+				<td><a href="profile.html">RAMESH</a></td>
+				<td>Mysore</td>
+				<td>MongoDB</td>
+			</tr>
+			<tr>
+				<td><a href="profile.html">PRANATHI</a></td>
+				<td>Tumkur</td>
+				<td>CassandraDB</td>
+			</tr>
+		</tbody>
+	</table>
+   </section>
+	
+</div><!--container end-->
+	<div style="clear;both"></div>
+	<footer>
+		Copyright &copy; 2019, IT Tools Web Developer Directory
+	</footer>
+</body>
+</html>
