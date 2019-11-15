@@ -1,0 +1,136 @@
+CSS 
+JavaScript
+
+effects with javascript:
+
+javascript library--- jquery.js
+
+selector--$
+function---ready
+events--- click, dblclick, mouseover, mouseout, 
+effects--- hide, show, toggle, slideUp, slideToggle, slideDown, fadeOut,fadeIn,
+
+
+append
+prepend
+before
+after
+remove
+
+
+addClass
+removeClass
+toggleClass
+css
+
+text
+html
+attr
+
+siblings
+
+
+get--select
+post--add
+put--update
+delete---removal
+patch--
+trace
+
+UI----
+	jquery-ui
+
+
+AJAX---
+
+
+
+open
+send
+
+
+
+localStorage.setItem('sname',value);
+
+localStorage.getItem('sname');
+
+localStorage.removeItem();
+
+Canvas
+SVG
+-------------------------------------------------
+RIA--Rich Internet Application
+
+
+XML/JSON
+
+[{"lid":value,"":value},{"lid":value},{}]
+var employeess=
+[{
+"eid":12, 
+"ename":"sss",
+"project" :[
+	{
+		"projid":213,
+		"pname":"A",
+		"tech": ["c","c++","html","js"]
+	},
+	{
+		"projid":214,
+		"pname":"B",
+		"tech": ["c","java","html","js"]
+	}
+],
+"dept": {
+	"depid":"d01",
+	"dname":"pro"
+},
+"location": "EMC"
+},
+{
+"eid":12, 
+"ename":"sss",
+"project" :[
+	{
+		"projid":213,
+		"pname":"A",
+		"tech": ["c","c++","html","js"]
+	},
+	{
+		"projid":214,
+		"pname":"B",
+		"tech": ["c","java","html","js"]
+	}
+],
+"dept": {
+	"depid":"d01",
+	"dname":"pro"
+},
+"location": "EMC"
+}
+]
+ {
+        "eid": 43,
+        "ename": "Anil",
+        "salary": 54667,
+        "doj": "2019-10-16 15:06:38",
+        "dept": {
+            "did": 40,
+            "dname": "deve",
+            "loc": {
+                "lid": 35,
+                "lname": "Vaksha"
+            }
+        },
+        "job": {
+            "jcode": 26,
+            "jname": "analyst"
+        },
+        "bonus": 5667
+    }
+
+
+
+
+
+

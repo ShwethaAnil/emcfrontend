@@ -1,0 +1,25 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+var jsonData;
+$.ajax({
+    url: 'http://localhost:8089/SpringWithER/locations',
+    type: 'GET',
+    data: {
+        json: jsonData
+    },
+    success: function (response) {
+        var trHTML = '';
+        $.each(response, function (i, item) {
+            trHTML += '<tr><td>' + item.lid + '</td><td>' + item.lname + '</td></tr>';
+        });
+        $('#records_table').append(trHTML);
+    }
+});
+</script>
+
+<table id="records_table" border='1'>
+    <tr>
+        <th>Location Id</th>
+        <th>LocationName</th>
+    </tr>
+</table>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+
+function myTable(lid,lname){
+	var table= document.getElementById("table");
+	var row= table.insertRow(1);
+	var col1= row.insertCell(0);
+	var col2= row.insertCell(1);
+	col1.innerHTML = lid;
+	col2.innerHTML = lname;
+}
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $.get("http://localhost:8089/SpringWithER/locations", function(data, status){
+		var obj = JSON.stringify(data);
+		document.getElementById('div1').innerHTML= obj;
+		
+		for(i in data){
+			myTable(JSON.stringify(data[i].lid),JSON.stringify(data[i].lname));
+		}	
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<button>get the data</button>
+<div id="div1">
+</div>
+<hr/>
+<br/>
+<br/>
+<table align = "center"
+            id="table" border="1"> 
+			<tr><th>Location Id</th><th>Location Name</th></tr>
+    </table> 
+	
+</body>
+</html>

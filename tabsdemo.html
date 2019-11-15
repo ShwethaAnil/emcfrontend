@@ -1,0 +1,67 @@
+<html>
+<head>
+<link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="jquery-ui/jquery-ui.min.js"></script>
+<script>
+	$(document).ready(function(){
+	$("#tabs").tabs();
+	
+	$("#dateinput").datepicker({
+		numberOfMonths: 1,
+		changeYear: true,
+		changeMonth:true,
+		showWeek:true,
+		weekHeader:"wk hd",
+		showOtherMonth: true,
+		minDate: new Date(),
+		maxDate: new Date(2022,3,22)
+	});
+	
+	$("#acc").accordion({
+		collapsible: true,
+		event:"click",
+		animate: 300,
+		active:0,
+		heightStyle: true,
+		icons:{header: "ui-icon-plus", activeHeader:"ui-icon-minus"}
+	});
+	});
+</script>
+</head>
+<body>
+<div id="tabs">
+      <ul>
+        <li><a href="#t1">HTML</a></li>
+        <li><a href="#t2">CSS</a></li>
+        <li><a href="#t3">Javascript</a></li>
+      </ul>
+
+      <div id="t1">
+        <p>HTML - Hyper Text Markup Language - Used to develop web pages</p>
+      </div>
+      <div id="t2">
+        <p>CSS - Cascading Style Sheet - Decorates the Web Pages as per the need</p>
+      </div>
+      <div id="t3">
+        <p>Javascript - Changing the behaviour of the web pages</p>
+      </div>
+    </div>
+	<hr/>
+	<div id="mydiv">
+		<input type="text" id="dateinput"><br/>
+		<input type="date">
+	</div>
+	<hr/>
+	<div id="acc">
+		<h3>HTML</h3>
+		   <p>HTML - Hyper Text Markup Language - Used to develop web pages</p>
+		  
+		 <h3>CSS</h3> 
+			<p>CSS - Cascading Style Sheet - Decorates the Web Pages as per the need</p>
+			
+		<h3>JS</h3>	
+		<p>Javascript - Changing the behaviour of the web pages</p>
+	</div>
+	</body>
+</html>	

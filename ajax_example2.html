@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div style="padding:16px;">
+	TextBox : <input type="textbox" id="t1"></input>
+</div>
+<button>Add Data</button>
+<script>
+var lname = document.getElementById('t1').value;
+$(document).ready(function(){
+  $("button").click(function(){
+    $.post("http://localhost:8089/SpringWithER/locations",
+    {
+        "lid": 75,
+        "lname": "Bhagmane"
+    },
+    function(data,status){
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+  });
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<style>
+			#div1, #div2{
+				border: 5px solid blue;
+				width:250px;
+				height:100px;
+				padding:45px;
+				//background-color:blue;
+				position: relative;
+			}
+			
+			.newClass{
+			border: 5px solid red;
+			}
+			
+		</style>
+		<script>
+			$(document).ready(function(){
+			
+			function printmsg(){
+				alert('Welcome');
+			}
+			
+			$("#btn6").click(function(){
+				$("p:first").addClass("newClass");
+			});
+			
+			/*$("#btn6").click(function(){
+				$("#div1").fadeOut(3000, printmsg);
+			});*/
+			
+			$("#btn1").click(function(){
+				$("#div1  p:even").hide();
+			});
+			
+			$("#btn2").mouseover(function(){
+				$("#div1").show();
+			});
+			
+			$("#btn3").click(function(){
+				$("#div1").toggle();
+			});
+			
+				$("#btn4").click(function(){
+				$("#div1").animate({
+					left: '300px',
+					opacity: '0.5',
+				});	
+			});
+			
+			$("#btn4").dblclick(function(){
+				$("#div1").animate({
+					left: '0px',
+					opacity: '1',
+				});
+				
+			});
+			
+			$("#btn5").click(function(){
+				$("#div1").slideUp(2000).slideDown(2000).fadeOut(3000).fadeIn(2000);
+			});
+			
+			});
+			
+			
+			
+			
+		</script>
+	</head>
+	<div id="div1">
+		<p>
+		Some Content
+		</p>
+		<p>
+		Some  more Content
+		</p>
+		<p>
+		Some  3rd Content
+		</p>
+		<p>
+		Some  4th Content
+		</p>
+		
+	</div>
+	<div id="div2">
+		<p>
+		Some Content
+		</p>
+		<p>
+		Some  more Content
+		</p>
+		
+	</div>
+	
+	
+	<button id="btn1">Hide</button>
+	<button id="btn2">Show</button>
+	<button id="btn3">Toggle</button>
+	<button id="btn4">Animate</button>
+	<button id="btn5">Chain Effects</button>
+	<button id="btn6">Callback</button>
+</html>

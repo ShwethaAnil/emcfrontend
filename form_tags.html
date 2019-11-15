@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Login </title>
+		
+	</head>
+	<body>
+		<h1> Login Form</h1>
+		<fieldset>
+			<legend>Login</legend>
+		<form action="links.html" method="post" name="fname" onsubmit="return fn1();">
+			<label>UserName</label>
+			<br/>
+			<input type="text" name="uname" id="uname" pattern="^[a-zA-Z]*$" \
+			title="only letters" placeholder="only letters" required/>
+			<br/>
+			<label> Password</label><br/>
+			<input type="password" name="pwd" id="pwd" 
+			pattern="^[a-zA-Z0-9]{8}$"
+				title="only 8 charecters or numbers" required/>
+			<br/><br/><br/><br/>
+			<input type="submit" value="Login"/>
+			<input type="reset" value="Cancel"/>
+		</form>
+		</fieldset>
+		
+		<script>
+		function fn1(){
+			
+				var name=document.getElementById('uname');
+				localStorage.setItem('sname',name.value);
+				//return true;
+				}
+				
+		</script>
+	</body>
+</html>
